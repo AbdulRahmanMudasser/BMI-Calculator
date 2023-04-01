@@ -29,7 +29,10 @@ namespace BMI_Calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
+            decimal tempInFah = Convert.ToDecimal(textBox1.Text);
+            decimal tempInCel = (5 / 9) * (tempInFah - 32) ;
 
+            textBox2.Text = Convert.ToString(tempInCel);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
